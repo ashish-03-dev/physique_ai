@@ -1,0 +1,76 @@
+# -------------------
+# Node.js
+# -------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# -------------------
+# Build / Dist
+# -------------------
+dist/
+build/
+out/
+.next/
+*.cache/
+
+# -------------------
+# Logs
+# -------------------
+*.log
+log.txt
+
+# -------------------
+# Environment
+# -------------------
+.env
+*.env
+
+# -------------------
+# Python
+# -------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# -------------------
+# Project-specific ignores
+# -------------------
+
+# Backend (general)
+backend/generated/
+backend/uploads/
+
+# Python backend
+python_backend/__pycache__/
+
+# Ignore large/unnecessary data inside 4D-Humans
+python_backend/physique_engine/4D-Humans/assets/
+python_backend/physique_engine/4D-Humans/data/
+python_backend/physique_engine/4D-Humans/example_data/
+python_backend/physique_engine/4D-Humans/hmr2/
+
+# Keep important code and configs in 4D-Humans
+!python_backend/physique_engine/4D-Humans/*.py
+!python_backend/physique_engine/4D-Humans/*.sh
+!python_backend/physique_engine/4D-Humans/*.yml
+!python_backend/physique_engine/4D-Humans/*.md
+!python_backend/physique_engine/4D-Humans/.gitignore
+
+# Explicitly include analyze.py and app.py in python_backend
+!python_backend/analyze.py
+!python_backend/app.py
+
+# -------------------
+# OS / Editor files
+# -------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
